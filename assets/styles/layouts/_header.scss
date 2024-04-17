@@ -1,0 +1,110 @@
+header {
+    background: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom : 2px solid rgb(0, 0, 0); 
+    height : 250px;
+
+    @media screen and (max-width:1100px){
+        display : block ; 
+    }
+
+    .header-container {
+        display: flex;
+        justify-content: space-around;
+         align-items: center;
+         width: 85%;
+
+         @media screen and (max-width:1100px){
+            display :  flex; 
+           flex-wrap : wrap; 
+           width: 100%;
+        }
+    
+        #logo{
+            height: 200px;
+            width: 200px;
+            border-radius : 500px;
+            @media screen and (max-width:1100px){
+             margin: 20px;
+ 
+            }
+    
+        }
+
+        #number{
+            font-size : 1.7rem; 
+            color : $color2; 
+            font-weight: 600; 
+            color : $font1 ;
+            letter-spacing: 2px; 
+            
+         @media screen and (max-width:1100px){
+            display :  flex; 
+           flex-wrap : wrap; 
+           width: 50%;
+        }
+
+            i{
+                font-size : 2rem;
+                transform: rotate(50deg); 
+                
+
+                &:hover{
+                    transform : scale(1.05); 
+                    transition : 0.6s ease-in ; 
+                }
+            }
+       
+        }
+
+        .custom-list{
+            display: flex;
+          justify-content: space-around;
+            align-items: center;
+            width: 40%;
+            margin: 0;
+
+            @media screen and (max-width:1100px){
+                display : flex ; 
+                justify-content: space-around;
+            }
+
+            h3{
+                font-size: 1rem ; 
+                color: $color1;
+                font-family: $font1;
+
+                @media screen and (max-width:1100px){
+                    display : none;  
+                }
+            }
+
+            li{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 1.2rem; 
+                border: 2px solid $color3; 
+                padding: 10px;
+                border-radius : 50px; 
+
+                &:hover {
+                    border:2px solid $color1 ; 
+                    transform : scale(1.07);
+                    transition : 0.6s ease-in; 
+                    color: $color2;
+                    
+                }
+
+                @media screen and (max-width:1100px){
+              display : none ; 
+                }
+            }
+        }
+
+
+    }
+ 
+}

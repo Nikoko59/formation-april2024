@@ -1,0 +1,44 @@
+// réglaages de base 
+
+// fonts
+@font-face { 
+    font-family:"Poppins", sans-serif ;
+    src : url("/assets/fonts/Poppins-ExtraBold.ttf") ; 
+}
+
+// root
+$color1 : #662225; 
+$font1 : Poppins ; 
+$color2: #b51d0a; 
+$color3 : #ead39c; 
+$color4 : #7d5e3c; 
+
+
+// mixin 
+@mixin text { 
+    text-transform: uppercase;
+    font-size : 2rem ; 
+    font-family: $font1;
+    color: $color1; 
+    text-align: center;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: $font1;
+}
+
+body  { 
+    background: #f2f2f2; 
+}
+
+h1{ 
+    @include text ; 
+}
+
+li {
+    list-style-type: none;
+}
+
